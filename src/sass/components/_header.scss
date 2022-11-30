@@ -8,6 +8,14 @@
     height: $header-height;
     transition: height 0.3s ease;
 
+    @include tablet {
+        height: $header-tablet-height;
+        box-shadow: $box-shadow;
+    }
+    @include mobile {
+        height: $header-mobile-height;
+    }
+
     .container {
         height: 100%;
     }
@@ -33,12 +41,15 @@
         height: 100%;
         font-size: 1.5rem;
 
-        &_mobile-toggle {
-            display: none;
-        }
-
     &_item ~ &_item {
         margin-left: 39px;
+        
+        @include tablet {
+            margin-left: 20px;
+        }
+        @include mobile {
+            margin-left: 10px;
+        }
     }
      
     &_item.active {
@@ -58,11 +69,11 @@
 
         &_item {
             @include flex(center, center);
-        }
 
-        @include tablet {
-            margin-left: auto;
+            @include tablet {
+            margin-left: 10px;
         }
+    }
         @include mobile {
             font-size: 1.5rem;
         }
@@ -70,8 +81,44 @@
     &_left {
         &_close {
             display: none;
+                }
+        @include tablet {
+            flex-direction: column;
+            background-color: $main-bg;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            justify-content: flex-start;
+            padding-top: 30px;
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+
+            &.active {
+                transform: translateX(0);
+            }
+
+            &_item ~ &_item {
+                margin-left: unset;
+                margin-top: 20px;
+            }
+            &_close {
+                display: block;
+                position: absolute;
+                left: 20px;
+                font-size: 2.5rem;
+            }
         }
-    }
+        }
+        &_mobile-toggle {
+            display: none;
+
+            @include tablet {
+                display: block;
+                font-size: 2.5rem;
+            }
+        }
     }
 
 }

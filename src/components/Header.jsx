@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+
 import logo from '../assets/images/logo.png'
 
 const mainNav = [
@@ -27,11 +28,26 @@ const Header = () => {
 
   const activeNav = mainNav.findIndex(e => e.path === pathname)
   
+ 
   const headerRef = useRef(null)
 
+  useEffect(() => {
 
+    window.addEventListener("scroll", () => {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            headerRef.current.classList.add('shrink')
+        } else {
+            headerRef.current.classList.remove('shrink')
+        }
+    })
+    return () => {
+      
+    };
+}, []);
 
+const menuLeft = useRef(null)
 
+const menuToggle = () => menuLeft.current.classList.toggle('active')
 
   return (
     <div className="header shrink" ref={headerRef}>
@@ -42,18 +58,20 @@ const Header = () => {
         </Link>
         </div>
         <div className="header_menu"> 
-        <div className="header_menu_mobile-toggle">
+        <div className="header_menu_mobile-toggle" onClick={menuToggle}>
               <i class='bx bx-menu-alt-left'></i>
         </div>  
-          <div className="header_menu_left">
-          <div className="header_menu_left_close">
+          <div className="header_menu_left" ref={menuLeft}>
+          <div className="header_menu_left_close" onClick={menuToggle}>
               <i class='bx bx-chevron-left'></i>
         </div>   
   
         {
           mainNav.map((item, index) => (
             <div key={index} className={`header_menu_item
-            header_menu_left_item ${index === activeNav} ? 'active' : ''}`}>
+            header_menu_left_item ${index === activeNav} ? 'active' : ''}`}
+            onClick={menuToggle}
+            >
               <Link to={item.path}>
               <span>{item.display}</span>
               </Link>
