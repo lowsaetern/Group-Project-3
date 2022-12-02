@@ -139,17 +139,7 @@ const Home = () => {
                               slug={item.slug}
                               />
                             ))
-                        } {
-                          productData.getProducts(4).map((item, index) => (
-                              <ProductCard
-                                key={index}
-                                img01={item.image01}
-                                name={item.title}
-                                price={Number(item.price)}
-                                slug={item.slug}
-                                />
-                              ))
-                          }
+                        } 
           </Grid>
       </SectionBody>
     </Section>
