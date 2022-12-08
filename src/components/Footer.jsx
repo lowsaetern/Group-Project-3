@@ -28,7 +28,7 @@ const footerCustomerLinks = [
   },
   {
     display: "Shopping Cart",
-    path: "/",
+    path: "/cart",
   },
   {
     display: "FAQs",
