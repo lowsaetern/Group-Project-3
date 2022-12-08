@@ -4,6 +4,31 @@
     text-decoration: none;
 }
 
+/* Home Styling */
+.hero-slider a,
+.section a {
+    text-decoration: none;
+}
+.hero-slider .btn_txt,
+.hero-slider span i,
+.section_body .product-card_btn .btn_txt, 
+.section_body .product-card_btn .btn_icon {
+    color: white;
+}
+
+/* Catalog Styling */
+.catalog a {
+    text-decoration: none;
+}
+
+.catalog .btn_txt,
+.catalog .btn_icon {
+    color: white;
+}
+
+/* Profile Page Styling */
+
+
 /* Contact Page Styling */
 .contactInfo p {
     font-size: 1.1vw;
@@ -11,4 +36,20 @@
 
 .contactForm .form-label {
     font-size: 1.1vw;
+}
+
+/* Cart Styling */
+.cart .btn_txt {
+    color: white;
+}
+
+/* Footer Styling */
+.footer .footer_content a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer .footer_content a:hover {
+    color: #0066FF;
+    font-weight: bold;
 }

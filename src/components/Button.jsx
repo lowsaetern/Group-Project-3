@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Button = props => {
 
-const bg = props.backgroundColor ? 'bg-' + props.backgroundColor : 'bg-main'
+const bg = props.backgroundColor ? 'bg-' + props.backgroundColor : 'bg-primary'
 
 const size = props.size ? 'btn-' + props.size : ''
 
