@@ -13,8 +13,8 @@ const mainNav = [
     path: "/catalog",
   },
   {
-    display: "Profiles",
-    path: "/profiles",
+    display: "Profile",
+    path: "/profile",
   },
   {
     display: "Contact",
@@ -24,7 +24,6 @@ const mainNav = [
 
 const Header = () => {
   const { pathname } = useLocation();
-
   const activeNav = mainNav.findIndex((e) => e.path === pathname);
 
   const headerRef = useRef(null);
@@ -48,7 +47,7 @@ const Header = () => {
   const menuToggle = () => menuLeft.current.classList.toggle("active");
 
   return (
-    <div className="header shrink" ref={headerRef}>
+    <div className="header" ref={headerRef}>
       <div className="container">
         <div className="header_logo">
           <Link to="/">
@@ -57,18 +56,18 @@ const Header = () => {
         </div>
         <div className="header_menu">
           <div className="header_menu_mobile-toggle" onClick={menuToggle}>
-            <i class="bx bx-menu-alt-left"></i>
+            <i className="bx bx-menu-alt-left"></i>
           </div>
           <div className="header_menu_left" ref={menuLeft}>
             <div className="header_menu_left_close" onClick={menuToggle}>
-              <i class="bx bx-chevron-left"></i>
+              <i className="bx bx-chevron-left"></i>
             </div>
-
             {mainNav.map((item, index) => (
               <div
                 key={index}
-                className={`header_menu_item
-            header_menu_left_item ${index === activeNav} ? 'active' : ''}`}
+                className={`header_menu_item header_menu_left_item ${
+                  index === activeNav ? "active" : ""
+                }`}
                 onClick={menuToggle}
               >
                 <Link to={item.path}>
