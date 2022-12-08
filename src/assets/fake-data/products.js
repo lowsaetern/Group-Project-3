@@ -7,25 +7,28 @@ const products = [
         title: "For Sale",
         price: '15.99',
         image01: product_01,
-        categorySlug: "shirt",
+        categorySlug: "T-Shirt",
         slug: "Tshirt",
-        size: ["s", "m", "l", "xl"]
+        color: ["Red", "Blue", "White"],
+        size: ["s", "m", "l"]
     },
     {
         title: "Not for sale",
         price: '13.99',
         image01: product_02,
-        categorySlug: "shirt",
+        categorySlug: "Shirt",
         slug: "Tshirt",
-        size: ["s", "m", "l", "xl"]
+        color: ["Green", "Blue"],
+        size: ["l", "xl"]
     },
     {
         title: "Black Shirt",
         price: '16.99',
         image01: product_03,
-        categorySlug: "shirt",
+        categorySlug: "Shirt",
         slug: "Tshirt",
-        size: ["s", "m", "l", "xl"]
+        color: ["Black"],
+        size: ["s", "l", "xl", "xxl"]
     },
     ]
     const getAllProducts = () => products
