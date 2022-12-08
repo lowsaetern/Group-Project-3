@@ -1,16 +1,20 @@
 const category = [
   {
-    display: "T-Shirt",
-    categorySlug: "T-Shirt",
+    display: "Shirt",
+    categorySlug: "shirt",
   },
   {
-    display: "Shirt",
-    categorySlug: "Shirt",
+    display: "Dress",
+    categorySlug: "dress",
   },
   {
     display: "Jeans",
-    categorySlug: "Jeans",
+    categorySlug: "jeans",
   },
+  {
+    display: "Jacket",
+    categorySlug: "jacket",
+  }
 ];
 
 export default category;

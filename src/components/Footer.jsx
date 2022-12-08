@@ -47,7 +47,7 @@ const Footer = () => {
             <div className="footer_content">
               <p>Group Project 3</p>
               <p>UCD Bootcamp</p>
-              <p>E-commerce</p>
+              <p>Buy Other People's Stuff</p>
             </div>
           </div>
           <div>
@@ -81,8 +81,13 @@ const Footer = () => {
               </Link>
             </p>
             <p>
-              Low Saetern Nicole Verhulp Nathan Hur Christopher Mata Truman
-              Stephenson Luis Salcedo
+              Low Saetern 
+              <br></br>
+              Nicole Verhulp 
+              <br></br>
+              Nathan Hur 
+              <br></br>
+              Christopher Mata 
             </p>
           </div>
         </Grid>
