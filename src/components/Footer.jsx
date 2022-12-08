@@ -9,12 +9,12 @@ const footerAboutLinks = [
     path: "/",
   },
   {
-    display: "About",
-    path: "/about",
-  },
-  {
     display: "Catalog",
     path: "/catalog",
+  },
+  {
+    display: "Profile",
+    path: "/profile",
   },
   {
     display: "Contact",
@@ -81,8 +81,7 @@ const Footer = () => {
               </Link>
             </p>
             <p>
-              Low Saetern Nicole Verhulp Nathan Hur Christopher Mata Truman
-              Stephenson Luis Salcedo
+              Low Saetern Nicole Verhulp Nathan Hur Christopher Mata
             </p>
           </div>
         </Grid>
