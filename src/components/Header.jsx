@@ -13,8 +13,8 @@ const mainNav = [
     path: "/catalog",
   },
   {
-    display: "Profiles",
-    path: "/profiles",
+    display: "Profile",
+    path: "/profile",
   },
   {
     display: "Contact",
@@ -87,6 +87,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="header_menu_item header_menu_right_item">
+              <Link to="http://localhost:3001/register"></Link>
               <i className="bx bx-user"></i>
             </div>
           </div>
