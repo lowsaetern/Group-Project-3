@@ -1,27 +1,27 @@
 const colors = [
     {
         display: "White",
-        color: "white"
+        color: "White"
     },
     {
-        display: "Pink",
-        color: "pink"
+        display: "Red",
+        color: "Red"
     },
     {
         display: "Black",
-        color: "black"
+        color: "Black"
     },
     {
         display: "Yellow",
-        color: "yellow"
+        color: "Yellow"
     },
     {
-        display: "Orange",
-        color: "orange"
+        display: "Green",
+        color: "Green"
     },
     {
         display: "Blue",
-        color: "blue"
+        color: "Blue"
     }
 ]
 
