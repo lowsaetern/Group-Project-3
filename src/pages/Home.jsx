@@ -40,7 +40,7 @@ const Home = () => {
         <SectionTitle>Our New Inventory</SectionTitle>
         <SectionBody>
           <Grid col={4} mdCol={2} smCol={1} gap={20}>
-            {productData.getProducts(4).map((item, index) => (
+            {productData.getProducts(3).map((item, index) => (
               <ProductCard
                 key={index}
                 img01={item.image01}
@@ -49,69 +49,7 @@ const Home = () => {
                 slug={item.slug}
               />
             ))}
-            {productData.getProducts(4).map((item, index) => (
-              <ProductCard
-                key={index}
-                img01={item.image01}
-                name={item.title}
-                price={Number(item.price)}
-                slug={item.slug}
-              />
-            ))}{" "}
-            {productData.getProducts(4).map((item, index) => (
-              <ProductCard
-                key={index}
-                img01={item.image01}
-                name={item.title}
-                price={Number(item.price)}
-                slug={item.slug}
-              />
-            ))}{" "}
-            {productData.getProducts(4).map((item, index) => (
-              <ProductCard
-                key={index}
-                img01={item.image01}
-                name={item.title}
-                price={Number(item.price)}
-                slug={item.slug}
-              />
-            ))}{" "}
-            {productData.getProducts(4).map((item, index) => (
-              <ProductCard
-                key={index}
-                img01={item.image01}
-                name={item.title}
-                price={Number(item.price)}
-                slug={item.slug}
-              />
-            ))}{" "}
-            {productData.getProducts(4).map((item, index) => (
-              <ProductCard
-                key={index}
-                img01={item.image01}
-                name={item.title}
-                price={Number(item.price)}
-                slug={item.slug}
-              />
-            ))}{" "}
-            {productData.getProducts(4).map((item, index) => (
-              <ProductCard
-                key={index}
-                img01={item.image01}
-                name={item.title}
-                price={Number(item.price)}
-                slug={item.slug}
-              />
-            ))}{" "}
-            {productData.getProducts(4).map((item, index) => (
-              <ProductCard
-                key={index}
-                img01={item.image01}
-                name={item.title}
-                price={Number(item.price)}
-                slug={item.slug}
-              />
-            ))}
+  
           </Grid>
         </SectionBody>
       </Section>
