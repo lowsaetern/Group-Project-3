@@ -41,7 +41,7 @@ const Cart = () => {
           <div className="cart_info_txt">
             <p>Your {totalProducts} total in cart</p>
             <div className="cart_info_txt_price">
-              <span>Money:</span>{" "}
+              <span> Your Total:</span>{" "}
               <span>{numberWithCommas(Number(totalPrice))}</span>
             </div>
           </div>
