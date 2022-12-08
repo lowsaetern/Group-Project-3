@@ -1,4 +1,24 @@
-# Group-Project-3
+# Buy Other Peoples' Stuff (BOPS)
+
+## Table of Contents
+1. [Project Description](#project-description)
+2. [Deployed Page](#deployed-page)
+3. [Technologies Used](#technologies-used)
+4. [Credits](#credits)
+
+## Description
+
+
+## Deployed Page
+<img src = "./assets/deployed-page.png">
+
+[URL of Deployed Application]()
+
+## Technologies Used
+
+
+## Credits
+This app was built collaboratively by Nathan Hur, Christopher Mata, Low Saetern and Nicole Verhulp.
 
 # Getting Started with Create React App
 
