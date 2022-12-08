@@ -1,0 +1,14 @@
+/* Header Styling */
+.header span,
+.header a {
+    text-decoration: none;
+}
+
+/* Contact Page Styling */
+.contactInfo p {
+    font-size: 1.1vw;
+}
+
+.contactForm .form-label {
+    font-size: 1.1vw;
+}

@@ -13,8 +13,8 @@ const ContactForm = () => {
         console.log(conFom)
     }
     return (
-        <div className="container mt-5">
-            <h2 className="mb-3">Reach Out to Us!</h2>
+        <div className="container mt-5 contactForm">
+            <h2 className="mb-3">How can we help?</h2>
             <form onSubmit={onSubmit}>
                  <div className="mb-3">
                     <label className="form-label" htmlFor="name">
