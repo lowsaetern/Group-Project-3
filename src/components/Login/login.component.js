@@ -1,6 +1,9 @@
-import React, { Component } from 'react'
-export default class Login extends Component {
-  render() {
+import React, { Component, useState } from "react";
+export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  {
     return (
       <form>
         <h3>Sign In</h3>
@@ -10,6 +13,8 @@ export default class Login extends Component {
             type="email"
             className="form-control"
             placeholder="Enter email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="mb-3">
@@ -18,6 +23,8 @@ export default class Login extends Component {
             type="password"
             className="form-control"
             placeholder="Enter password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <div className="mb-3">
@@ -33,7 +40,15 @@ export default class Login extends Component {
           </div>
         </div>
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+          <button
+            type="submit"
+            className="btn btn-primary"
+            onClick={(e) => {
+              e.preventDefault;
+              console.log("test");
+              fetch("http://localhost:5000/login");
+            }}
+          >
             Submit
           </button>
         </div>
@@ -41,6 +56,6 @@ export default class Login extends Component {
           Forgot <a href="#">password?</a>
         </p>
       </form>
-    )
+    );
   }
 }
