@@ -59,7 +59,7 @@ const Home = () => {
         >
 
            {
-            productData.getProducts(4).map((item, index) => (
+            productData.getProducts(3).map((item, index) => (
                 <ProductCard
                   key={index}
                   img01={item.image01}
@@ -70,7 +70,7 @@ const Home = () => {
                 ))
             }
              {
-            productData.getProducts(4).map((item, index) => (
+            productData.getProducts(3).map((item, index) => (
                 <ProductCard
                   key={index}
                   img01={item.image01}
@@ -80,7 +80,7 @@ const Home = () => {
                   />
                 ))
             } {
-              productData.getProducts(4).map((item, index) => (
+              productData.getProducts(3).map((item, index) => (
                   <ProductCard
                     key={index}
                     img01={item.image01}
@@ -90,7 +90,7 @@ const Home = () => {
                     />
                   ))
               } {
-                productData.getProducts(4).map((item, index) => (
+                productData.getProducts(3).map((item, index) => (
                     <ProductCard
                       key={index}
                       img01={item.image01}
@@ -100,7 +100,7 @@ const Home = () => {
                       />
                     ))
                 } {
-                  productData.getProducts(4).map((item, index) => (
+                  productData.getProducts(3).map((item, index) => (
                       <ProductCard
                         key={index}
                         img01={item.image01}
@@ -110,7 +110,7 @@ const Home = () => {
                         />
                       ))
                   } {
-                    productData.getProducts(4).map((item, index) => (
+                    productData.getProducts(3).map((item, index) => (
                         <ProductCard
                           key={index}
                           img01={item.image01}
@@ -120,7 +120,7 @@ const Home = () => {
                           />
                         ))
                     } {
-                      productData.getProducts(4).map((item, index) => (
+                      productData.getProducts(3).map((item, index) => (
                           <ProductCard
                             key={index}
                             img01={item.image01}
@@ -130,7 +130,7 @@ const Home = () => {
                             />
                           ))
                       } {
-                        productData.getProducts(4).map((item, index) => (
+                        productData.getProducts(3).map((item, index) => (
                             <ProductCard
                               key={index}
                               img01={item.image01}
