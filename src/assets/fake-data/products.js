@@ -27,7 +27,7 @@ const products = [
     categorySlug: "shirt",
     slug: "shirt",
     size: ["s"],
-    color: "orange",
+    colors: "orange",
   },
   {
     title: "Jean Vest",
@@ -36,7 +36,7 @@ const products = [
     categorySlug: "jacket",
     slug: "jacket",
     size: ["m"],
-    color: "blue",
+    colors: ["blue"],
   },
   {
     title: "Jean Jacket",
@@ -45,7 +45,7 @@ const products = [
     categorySlug: "jacket",
     slug: "jacket",
     size: ["l"],
-    color: "blue",
+    colors: ["blue"],
 
   },
   {
@@ -55,7 +55,7 @@ const products = [
     categorySlug: "jacket",
     slug: "jacket",
     size: ["m" ],
-    color: "green",
+    colors: ["green"],
 
   },{
     title: "Banana Republic Jeans",
@@ -64,7 +64,7 @@ const products = [
     categorySlug: "jeans",
     slug: "jeans",
     size: ["s"],
-    color: "blue",
+    colors: ["blue"],
   },
   {
     title: "Black Dress",
@@ -73,7 +73,7 @@ const products = [
     categorySlug: "dress",
     slug: "dress",
     size: ["m"],
-    color: "black",
+    colors: ["black"],
   },
   {
     title: "Black Jeans",
@@ -82,7 +82,7 @@ const products = [
     categorySlug: "jeans",
     slug: "jeans",
     size: ["m"],
-    color: "black",
+    colors: ["black"],
 
   },
   {
@@ -92,7 +92,7 @@ const products = [
     categorySlug: "jacket",
     slug: "jacket",
     size: ["m" ],
-    color: "blue",
+    colors: ["blue"],
 
   },
   {
@@ -102,7 +102,7 @@ const products = [
     categorySlug: "jacket",
     slug: "jacket",
     size: ["s"],
-    color: "brown",
+    colors: ["brown"],
   },
   {
     title: "Burgundy Dress",
@@ -111,7 +111,7 @@ const products = [
     categorySlug: "dress",
     slug: "dress",
     size: ["m"],
-    color: "red",
+    colors: ["red"],
   },
   {
     title: "All Black Jeans",
@@ -120,7 +120,7 @@ const products = [
     categorySlug: "jeans",
     slug: "jeans",
     size: ["s"],
-    color: "black",
+    colors: ["black"],
 
   },
   {
@@ -130,7 +130,7 @@ const products = [
     categorySlug: "jacket",
     slug: "jacket",
     size: ["l" ],
-    color: "brown",
+    colors: ["brown"],
 
   },
   {
@@ -140,7 +140,7 @@ const products = [
     categorySlug: "jacket",
     slug: "jacket",
     size: ["s"],
-    color: "yellow",
+    colors: ["yellow"],
   },
   {
     title: "Black Sweater",
@@ -149,7 +149,7 @@ const products = [
     categorySlug: "jacket",
     slug: "jacket",
     size: ["m"],
-    color: "black",
+    colors: ["black"],
   },
   {
     title: "Striped Blouse",
@@ -158,7 +158,7 @@ const products = [
     categorySlug: "shirt",
     slug: "shirt",
     size: ["l"],
-    color: "brown",
+    colors: ["brown"],
 
   },
   {
@@ -168,7 +168,7 @@ const products = [
     categorySlug: "dress",
     slug: "dress",
     size: ["m" ],
-    color: "red",
+    colors: ["red"],
 
   },
   {
@@ -178,7 +178,7 @@ const products = [
     categorySlug: "jacket",
     slug: "jacket",
     size: ["l"],
-    color: "green",
+    colors: ["green"],
   },
   {
     title: "Northern Crewneck",
@@ -187,7 +187,7 @@ const products = [
     categorySlug: "jacket",
     slug: "jacket",
     size: ["m"],
-    color: "black",
+    colors: ["black"],
   },
   {
     title: "Striped Sweater",
@@ -196,7 +196,7 @@ const products = [
     categorySlug: "jacket",
     slug: "jacket",
     size: ["l"],
-    color: "blue, red, brown",
+    colors: ["blue, red, brown"],
 
   },
   {
@@ -206,7 +206,7 @@ const products = [
     categorySlug: "jacket",
     slug: "jacket",
     size: ["s" ],
-    color: "black",
+    colors: ["black"],
 
   },
 
