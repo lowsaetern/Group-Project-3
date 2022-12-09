@@ -13,7 +13,7 @@ import InfinityList from "../components/InfinityList";
 const Catalog = () => {
   const initFilter = {
     category: [],
-    color: [],
+    colors: [],
     size: [],
   };
 
@@ -33,7 +33,7 @@ const Catalog = () => {
           });
           break;
         case "COLOR":
-          setFilter({ ...filter, color: [...filter.color, item.color] });
+          setFilter({ ...filter, colors: [...filter.colors, item.color] });
           break;
         case "SIZE":
           setFilter({ ...filter, size: [...filter.size, item.size] });
@@ -49,8 +49,8 @@ const Catalog = () => {
           setFilter({ ...filter, category: newCategory });
           break;
         case "COLOR":
-          const newColor = filter.color.filter((e) => e !== item.color);
-          setFilter({ ...filter, color: newColor });
+          const newColor = filter.colors.filter((e) => e !== item.color);
+          setFilter({ ...filter, colors: newColor });
           break;
         case "SIZE":
           const newSize = filter.size.filter((e) => e !== item.size);
@@ -70,9 +70,9 @@ const Catalog = () => {
       temp = temp.filter((e) => filter.category.includes(e.categorySlug));
     }
 
-    if (filter.color.length > 0) {
+    if (filter.colors.length > 0) {
       temp = temp.filter((e) => {
-        const check = e.colors.find((color) => filter.color.includes(color));
+        const check = e.color.find((color) => filter.colors.includes(color));
         return check !== undefined;
       });
     }
@@ -132,7 +132,7 @@ const Catalog = () => {
                     onChange={(input) =>
                       filterSelect("COLOR", input.checked, item)
                     }
-                    checked={filter.color.includes(item.color)}
+                    checked={filter.colors.includes(item.color)}
                   />
                 </div>
               ))}

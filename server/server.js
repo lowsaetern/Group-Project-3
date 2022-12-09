@@ -10,7 +10,7 @@ const auth = require("./routes/auth");
 const cors = require("cors");
 const port = process.env.PORT;
 
-//mongoose.Promise = global.Promise;
+mongoose.Promise = global.Promise;
 app.use(
   cors({
     origin: "*",
