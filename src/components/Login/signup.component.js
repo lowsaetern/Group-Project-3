@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 export default function SignUp() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -55,7 +55,7 @@ export default function SignUp() {
           onClick={(e) => {
             e.preventDefault();
             console.log("test");
-            fetch("http://localhost:5000/register", {
+            fetch("http://localhost:3001/register", {
               method: "POST",
               body: JSON.stringify({ firstName, lastName, email, password }),
               headers: {
