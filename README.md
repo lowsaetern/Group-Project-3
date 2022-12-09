@@ -1,4 +1,36 @@
-# Group-Project-3
+# Buy Other Peoples' Stuff (BOPS)
+
+## Table of Contents
+1. [Project Description](#project-description)
+2. [Deployed Page](#deployed-page)
+3. [Technologies Used](#technologies-used)
+4. [Credits](#credits)
+
+## Description
+
+BOPS is an ecommerce website that is an online thrift shop. It allows a user to create their own profile and upload their own posts/products and they are able to browse and buy items from other users.
+
+Trends are constantly changing and many items are often used only several times and then tossed to the side. BOPS makes it so these hardly touched items can find a new home and be repurposed rather than wasted.
+
+As a user, I want an app that allows me to be more sustainable and look for gently used items instead of buying the same thing brand new. I also want to be able to upload my own pieces that can be given a second chance.
+
+## Deployed Page
+
+<img src = "./assets/deployed-page.png">
+
+[URL of Deployed Application]()
+
+## Technologies Used
+
+- React
+- Redux
+- SASS
+- JavaScript
+- MongoDB
+- Heroku
+
+## Credits
+This app was built collaboratively by Nathan Hur, Christopher Mata, Low Saetern and Nicole Verhulp.
 
 # Getting Started with Create React App
 
