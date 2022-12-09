@@ -81,7 +81,6 @@ const Footer = () => {
               </Link>
             </p>
             <p>
-              Low Saetern Nicole Verhulp Nathan Hur Christopher Mata
               Low Saetern 
               <br></br>
               Nicole Verhulp 
